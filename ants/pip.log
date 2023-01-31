@@ -1,0 +1,131 @@
+2023-01-02T16:14:40,344 Using pip 21.2.4 from C:\Conda\lib\site-packages\pip (python 3.9)
+2023-01-02T16:14:40,348 Non-user install due to --prefix or --target option
+2023-01-02T16:14:40,573 Created temporary directory: C:\Users\焦雪源\AppData\Local\Temp\chocolatey\pip-ephem-wheel-cache-6nlk4hw5
+2023-01-02T16:14:40,575 Created temporary directory: C:\Users\焦雪源\AppData\Local\Temp\chocolatey\pip-req-tracker-f44cqel6
+2023-01-02T16:14:40,578 Initialized build tracking at C:\Users\焦雪源\AppData\Local\Temp\chocolatey\pip-req-tracker-f44cqel6
+2023-01-02T16:14:40,580 Created build tracker: C:\Users\焦雪源\AppData\Local\Temp\chocolatey\pip-req-tracker-f44cqel6
+2023-01-02T16:14:40,582 Entered build tracker: C:\Users\焦雪源\AppData\Local\Temp\chocolatey\pip-req-tracker-f44cqel6
+2023-01-02T16:14:40,585 Created temporary directory: C:\Users\焦雪源\AppData\Local\Temp\chocolatey\pip-install-zd8xl4ou
+2023-01-02T16:14:40,599 1 location(s) to search for versions of manim:
+2023-01-02T16:14:40,599 * https://pypi.org/simple/manim/
+2023-01-02T16:14:40,602 Fetching project page and analyzing links: https://pypi.org/simple/manim/
+2023-01-02T16:14:40,604 Getting page https://pypi.org/simple/manim/
+2023-01-02T16:14:40,607 Found index url https://pypi.org/simple
+2023-01-02T16:14:40,625 ERROR: Exception:
+2023-01-02T16:14:40,625 Traceback (most recent call last):
+2023-01-02T16:14:40,625   File "C:\Conda\lib\site-packages\pip\_internal\cli\base_command.py", line 173, in _main
+2023-01-02T16:14:40,625     status = self.run(options, args)
+2023-01-02T16:14:40,625   File "C:\Conda\lib\site-packages\pip\_internal\cli\req_command.py", line 203, in wrapper
+2023-01-02T16:14:40,625     return func(self, options, args)
+2023-01-02T16:14:40,625   File "C:\Conda\lib\site-packages\pip\_internal\commands\install.py", line 315, in run
+2023-01-02T16:14:40,625     requirement_set = resolver.resolve(
+2023-01-02T16:14:40,625   File "C:\Conda\lib\site-packages\pip\_internal\resolution\resolvelib\resolver.py", line 94, in resolve
+2023-01-02T16:14:40,625     result = self._result = resolver.resolve(
+2023-01-02T16:14:40,625   File "C:\Conda\lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 472, in resolve
+2023-01-02T16:14:40,625     state = resolution.resolve(requirements, max_rounds=max_rounds)
+2023-01-02T16:14:40,625   File "C:\Conda\lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 341, in resolve
+2023-01-02T16:14:40,625     self._add_to_criteria(self.state.criteria, r, parent=None)
+2023-01-02T16:14:40,625   File "C:\Conda\lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 172, in _add_to_criteria
+2023-01-02T16:14:40,625     if not criterion.candidates:
+2023-01-02T16:14:40,625   File "C:\Conda\lib\site-packages\pip\_vendor\resolvelib\structs.py", line 151, in __bool__
+2023-01-02T16:14:40,625     return bool(self._sequence)
+2023-01-02T16:14:40,625   File "C:\Conda\lib\site-packages\pip\_internal\resolution\resolvelib\found_candidates.py", line 140, in __bool__
+2023-01-02T16:14:40,625     return any(self)
+2023-01-02T16:14:40,625   File "C:\Conda\lib\site-packages\pip\_internal\resolution\resolvelib\found_candidates.py", line 128, in <genexpr>
+2023-01-02T16:14:40,625     return (c for c in iterator if id(c) not in self._incompatible_ids)
+2023-01-02T16:14:40,625   File "C:\Conda\lib\site-packages\pip\_internal\resolution\resolvelib\found_candidates.py", line 29, in _iter_built
+2023-01-02T16:14:40,625     for version, func in infos:
+2023-01-02T16:14:40,625   File "C:\Conda\lib\site-packages\pip\_internal\resolution\resolvelib\factory.py", line 272, in iter_index_candidate_infos
+2023-01-02T16:14:40,625     result = self._finder.find_best_candidate(
+2023-01-02T16:14:40,625   File "C:\Conda\lib\site-packages\pip\_internal\index\package_finder.py", line 851, in find_best_candidate
+2023-01-02T16:14:40,625     candidates = self.find_all_candidates(project_name)
+2023-01-02T16:14:40,625   File "C:\Conda\lib\site-packages\pip\_internal\index\package_finder.py", line 798, in find_all_candidates
+2023-01-02T16:14:40,625     page_candidates = list(page_candidates_it)
+2023-01-02T16:14:40,625   File "C:\Conda\lib\site-packages\pip\_internal\index\sources.py", line 134, in page_candidates
+2023-01-02T16:14:40,625     yield from self._candidates_from_page(self._link)
+2023-01-02T16:14:40,625   File "C:\Conda\lib\site-packages\pip\_internal\index\package_finder.py", line 758, in process_project_url
+2023-01-02T16:14:40,625     html_page = self._link_collector.fetch_page(project_url)
+2023-01-02T16:14:40,625   File "C:\Conda\lib\site-packages\pip\_internal\index\collector.py", line 490, in fetch_page
+2023-01-02T16:14:40,625     return _get_html_page(location, session=self.session)
+2023-01-02T16:14:40,625   File "C:\Conda\lib\site-packages\pip\_internal\index\collector.py", line 400, in _get_html_page
+2023-01-02T16:14:40,625     resp = _get_html_response(url, session=session)
+2023-01-02T16:14:40,625   File "C:\Conda\lib\site-packages\pip\_internal\index\collector.py", line 115, in _get_html_response
+2023-01-02T16:14:40,625     resp = session.get(
+2023-01-02T16:14:40,625   File "C:\Conda\lib\site-packages\pip\_vendor\requests\sessions.py", line 555, in get
+2023-01-02T16:14:40,625     return self.request('GET', url, **kwargs)
+2023-01-02T16:14:40,625   File "C:\Conda\lib\site-packages\pip\_internal\network\session.py", line 454, in request
+2023-01-02T16:14:40,625     return super().request(method, url, *args, **kwargs)
+2023-01-02T16:14:40,625   File "C:\Conda\lib\site-packages\pip\_vendor\requests\sessions.py", line 542, in request
+2023-01-02T16:14:40,625     resp = self.send(prep, **send_kwargs)
+2023-01-02T16:14:40,625   File "C:\Conda\lib\site-packages\pip\_vendor\requests\sessions.py", line 655, in send
+2023-01-02T16:14:40,625     r = adapter.send(request, **kwargs)
+2023-01-02T16:14:40,625   File "C:\Conda\lib\site-packages\pip\_vendor\requests\adapters.py", line 439, in send
+2023-01-02T16:14:40,625     resp = conn.urlopen(
+2023-01-02T16:14:40,625   File "C:\Conda\lib\site-packages\pip\_vendor\urllib3\connectionpool.py", line 696, in urlopen
+2023-01-02T16:14:40,625     self._prepare_proxy(conn)
+2023-01-02T16:14:40,625   File "C:\Conda\lib\site-packages\pip\_vendor\urllib3\connectionpool.py", line 964, in _prepare_proxy
+2023-01-02T16:14:40,625     conn.connect()
+2023-01-02T16:14:40,625   File "C:\Conda\lib\site-packages\pip\_vendor\urllib3\connection.py", line 359, in connect
+2023-01-02T16:14:40,625     conn = self._connect_tls_proxy(hostname, conn)
+2023-01-02T16:14:40,625   File "C:\Conda\lib\site-packages\pip\_vendor\urllib3\connection.py", line 500, in _connect_tls_proxy
+2023-01-02T16:14:40,625     return ssl_wrap_socket(
+2023-01-02T16:14:40,625   File "C:\Conda\lib\site-packages\pip\_vendor\urllib3\util\ssl_.py", line 453, in ssl_wrap_socket
+2023-01-02T16:14:40,625     ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls)
+2023-01-02T16:14:40,625   File "C:\Conda\lib\site-packages\pip\_vendor\urllib3\util\ssl_.py", line 495, in _ssl_wrap_socket_impl
+2023-01-02T16:14:40,625     return ssl_context.wrap_socket(sock)
+2023-01-02T16:14:40,625   File "C:\Conda\lib\ssl.py", line 500, in wrap_socket
+2023-01-02T16:14:40,625     return self.sslsocket_class._create(
+2023-01-02T16:14:40,625   File "C:\Conda\lib\ssl.py", line 997, in _create
+2023-01-02T16:14:40,625     raise ValueError("check_hostname requires server_hostname")
+2023-01-02T16:14:40,625 ValueError: check_hostname requires server_hostname
+2023-01-02T16:14:40,839 1 location(s) to search for versions of pip:
+2023-01-02T16:14:40,839 * https://pypi.org/simple/pip/
+2023-01-02T16:14:40,842 Fetching project page and analyzing links: https://pypi.org/simple/pip/
+2023-01-02T16:14:40,844 Getting page https://pypi.org/simple/pip/
+2023-01-02T16:14:40,847 Found index url https://pypi.org/simple
+2023-01-02T16:14:40,861 There was an error checking the latest version of pip
+2023-01-02T16:14:40,861 Traceback (most recent call last):
+2023-01-02T16:14:40,861   File "C:\Conda\lib\site-packages\pip\_internal\self_outdated_check.py", line 152, in pip_self_version_check
+2023-01-02T16:14:40,861     best_candidate = finder.find_best_candidate("pip").best_candidate
+2023-01-02T16:14:40,861   File "C:\Conda\lib\site-packages\pip\_internal\index\package_finder.py", line 851, in find_best_candidate
+2023-01-02T16:14:40,861     candidates = self.find_all_candidates(project_name)
+2023-01-02T16:14:40,861   File "C:\Conda\lib\site-packages\pip\_internal\index\package_finder.py", line 798, in find_all_candidates
+2023-01-02T16:14:40,861     page_candidates = list(page_candidates_it)
+2023-01-02T16:14:40,861   File "C:\Conda\lib\site-packages\pip\_internal\index\sources.py", line 134, in page_candidates
+2023-01-02T16:14:40,861     yield from self._candidates_from_page(self._link)
+2023-01-02T16:14:40,861   File "C:\Conda\lib\site-packages\pip\_internal\index\package_finder.py", line 758, in process_project_url
+2023-01-02T16:14:40,861     html_page = self._link_collector.fetch_page(project_url)
+2023-01-02T16:14:40,861   File "C:\Conda\lib\site-packages\pip\_internal\index\collector.py", line 490, in fetch_page
+2023-01-02T16:14:40,861     return _get_html_page(location, session=self.session)
+2023-01-02T16:14:40,861   File "C:\Conda\lib\site-packages\pip\_internal\index\collector.py", line 400, in _get_html_page
+2023-01-02T16:14:40,861     resp = _get_html_response(url, session=session)
+2023-01-02T16:14:40,861   File "C:\Conda\lib\site-packages\pip\_internal\index\collector.py", line 115, in _get_html_response
+2023-01-02T16:14:40,861     resp = session.get(
+2023-01-02T16:14:40,861   File "C:\Conda\lib\site-packages\pip\_vendor\requests\sessions.py", line 555, in get
+2023-01-02T16:14:40,861     return self.request('GET', url, **kwargs)
+2023-01-02T16:14:40,861   File "C:\Conda\lib\site-packages\pip\_internal\network\session.py", line 454, in request
+2023-01-02T16:14:40,861     return super().request(method, url, *args, **kwargs)
+2023-01-02T16:14:40,861   File "C:\Conda\lib\site-packages\pip\_vendor\requests\sessions.py", line 542, in request
+2023-01-02T16:14:40,861     resp = self.send(prep, **send_kwargs)
+2023-01-02T16:14:40,861   File "C:\Conda\lib\site-packages\pip\_vendor\requests\sessions.py", line 655, in send
+2023-01-02T16:14:40,861     r = adapter.send(request, **kwargs)
+2023-01-02T16:14:40,861   File "C:\Conda\lib\site-packages\pip\_vendor\requests\adapters.py", line 439, in send
+2023-01-02T16:14:40,861     resp = conn.urlopen(
+2023-01-02T16:14:40,861   File "C:\Conda\lib\site-packages\pip\_vendor\urllib3\connectionpool.py", line 696, in urlopen
+2023-01-02T16:14:40,861     self._prepare_proxy(conn)
+2023-01-02T16:14:40,861   File "C:\Conda\lib\site-packages\pip\_vendor\urllib3\connectionpool.py", line 964, in _prepare_proxy
+2023-01-02T16:14:40,861     conn.connect()
+2023-01-02T16:14:40,861   File "C:\Conda\lib\site-packages\pip\_vendor\urllib3\connection.py", line 359, in connect
+2023-01-02T16:14:40,861     conn = self._connect_tls_proxy(hostname, conn)
+2023-01-02T16:14:40,861   File "C:\Conda\lib\site-packages\pip\_vendor\urllib3\connection.py", line 500, in _connect_tls_proxy
+2023-01-02T16:14:40,861     return ssl_wrap_socket(
+2023-01-02T16:14:40,861   File "C:\Conda\lib\site-packages\pip\_vendor\urllib3\util\ssl_.py", line 453, in ssl_wrap_socket
+2023-01-02T16:14:40,861     ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls)
+2023-01-02T16:14:40,861   File "C:\Conda\lib\site-packages\pip\_vendor\urllib3\util\ssl_.py", line 495, in _ssl_wrap_socket_impl
+2023-01-02T16:14:40,861     return ssl_context.wrap_socket(sock)
+2023-01-02T16:14:40,861   File "C:\Conda\lib\ssl.py", line 500, in wrap_socket
+2023-01-02T16:14:40,861     return self.sslsocket_class._create(
+2023-01-02T16:14:40,861   File "C:\Conda\lib\ssl.py", line 997, in _create
+2023-01-02T16:14:40,861     raise ValueError("check_hostname requires server_hostname")
+2023-01-02T16:14:40,861 ValueError: check_hostname requires server_hostname
+2023-01-02T16:14:40,865 Removed build tracker: 'C:\\Users\\焦雪源\\AppData\\Local\\Temp\\chocolatey\\pip-req-tracker-f44cqel6'
